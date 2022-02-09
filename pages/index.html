@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse d-flex justify-content-around reducirNavbar barra-navegacion" id="navbarNavDropdown">
 
                 <div class="logo-nabvar">
-                    <a class="navbar-brand" href="index.html"> <img src="../img/logo/AGM.png" alt="logo" width="90px" height="75px"></a>
+                    <a class="navbar-brand" href="inicio.html"> <img src="../img/logo/AGM.png" alt="logo" width="90px" height="75px"></a>
 
                     <p class="texto-logo-navbar">Ingenieria y Servicios Generales</p>
 
@@ -32,7 +32,7 @@
 
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a style="color: #013a6a;" class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                        <a style="color: #013a6a;" class="nav-link active" aria-current="page" href="inicio.html"><i class="fas fa-home"></i> Inicio</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -40,11 +40,11 @@
                             <i class="fas fa-briefcase"></i> Servicios
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="servicioUno.html">Asesorías & Proyectos de Ingeniería - Arquitectura</a></li>
+                          <li><a class="dropdown-item item-navbar" href="servicioUno.html">Asesorías & Proyectos de Ingeniería - Arquitectura</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="servicioDos.html">Servicios Generales en Infraestructura & Ingenieria</a></li>
+                          <li><a class="dropdown-item item-navbar" href="servicioDos.html">Servicios Generales en Infraestructura & Ingenieria</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="servicioTres.html">Alquileres de Equipos & Herramientas para la Construccion</a></li>
+                          <li><a class="dropdown-item item-navbar" href="servicioTres.html">Alquileres de Equipos & Herramientas para la Construccion</a></li>
                         </ul>
                       </li>
 
@@ -68,7 +68,7 @@
             <a href="https://twitter.com/agmingenieriasg" class="fab fa-twitter" target="_blank"></a>
             <a href="https://www.instagram.com/agmingenieria/?hl=es-la" class="fab fa-instagram" target="_blank"></a>
             <a href="https://api.whatsapp.com/send?phone=+51943359199&text=Hola, Nececito mas informacion!" class="fab fa-whatsapp" target="_blank"></a>
-            <a href="mailto:gerencia.agmingenieria@gmail.com?subject=Quiero%20mas%20información%20sobre%20el%20producto&body=Hola%20te%20contacto%20desde%20tu%20WebSite%20y%20me%20interesa%20el%20producto....!" class="fas fa-envelope"></a>
+            <a href="mailto:gerencia.agmingenieria@gmail.com?subject=Quiero%20mas%20información%20sobre%20el%20producto&body=Hola,%20te%20contacto%20desde%20tu%20WebSite%20y%20me%20interesa%20el%20producto....!" class="fas fa-envelope"></a>
             <a href="tel:+51943359199" class="fas fa-phone"></a>
         </div>
         <div class="btn-mas">
@@ -78,49 +78,52 @@
     <!-- BOton Flotante FIn-->
 
     <!-- carrusel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/slider/servicio-1.png" class="d-block w-100 tamaño-carrusel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="titulo-servicios texto-carrusel">Asesorías & Proyectos de Ingeniería - Arquitectura</h3>
+                        <a href="servicioUno.html" class="btn btn-primary botonprincipal align-content-center">Ver mas</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/slider/servicio-2.png" class="d-block w-100 tamaño-carrusel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="titulo-servicios texto-carrusel">Servicios Generales en Infraestructura & Ingenieria</h3>
+                        <a href="servicioDos.html" class="btn btn-primary botonprincipal align-content-center">Ver mas</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/slider/servicio-3.png" class="d-block w-100 tamaño-carrusel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="titulo-servicios texto-carrusel">Servicio de Alquileres de Equipos & Herramientas para la Construccion</h3>
+                        <a href="servicioTres.html" class="btn btn-primary botonprincipal align-content-center">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/slider/servicio-1.png" class="d-block w-100 tamaño-carrusel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="titulo-servicios texto-carrusel">Asesorías & Proyectos de Ingeniería - Arquitectura</h3>
-                    <a href="servicioUno.html" class="btn btn-primary botonprincipal align-content-center">Ver mas</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/slider/servicio-2.png" class="d-block w-100 tamaño-carrusel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="titulo-servicios texto-carrusel">Servicios Generales en Infraestructura & Ingenieria</h3>
-                    <a href="servicioDos.html" class="btn btn-primary botonprincipal align-content-center">Ver mas</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/slider/servicio-3.png" class="d-block w-100 tamaño-carrusel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="titulo-servicios texto-carrusel">Servicio de Alquileres de Equipos & Herramientas para la Construccion</h3>
-                    <a href="servicioTres.html" class="btn btn-primary botonprincipal align-content-center">Ver mas</a>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    </main>
+    
 
     <!-- carrusel fin -->
 
@@ -286,12 +289,12 @@
     <section class="banner" style="margin-bottom: 35px; margin-top: 35px;">
         <div class="container" >
             <div class="row" style="text-align: center;">
-                <div class="regran-texto col align-self-center">
+                <div class="col align-self-center regran-texto p-3">
                     <h3 style="text-align: left;"><b>AGM</b> Ingenieria y Servicios Generales</h3>
                     <br/>
-                    <h4><i>"No encuentres clientes para tus productos, encuentra productos para tus clientes"</i></h4>
+                    <h4><i>"Comprometidos con la seguridad y el bienestar de sus colaboradores"</i></h4>
                 </div>
-                <div class="refran-imagen col align-self-center">
+                <div class="col align-self-center regran-imagen">
                     <img src="../img/banner/banner-persona.png" alt="persona-pensante" class="tamaño-imagen-banner">
                 </div>
             </div>
@@ -309,31 +312,31 @@
     <div class="carrusel container clientes">
         <div class="carrusel-items">
           <div class="carrusel-item">
-            <img src="../img/clientes/agroberries.png" alt="" />
+            <img src="../img/clientes/agroberries.png" alt="Agoberries" />
           </div>
           <div class="carrusel-item">
-            <img src="../img/clientes/asica.svg" alt="" />
+            <img src="../img/clientes/asica.svg" alt="Asica" />
           </div>
           <div class="carrusel-item">
-            <img src="../img/clientes/cajadelsanta.png" alt="" />
+            <img src="../img/clientes/cajadelsanta.png" alt="Caja del Santa" />
           </div>
           <div class="carrusel-item">
-            <img src="../img/clientes/incacel.png" alt="" />
+            <img src="../img/clientes/incacel.png" alt="IncaCel" />
           </div>
           <div class="carrusel-item">
-            <img src="../img/clientes/petroperu.png" alt="" />
+            <img src="../img/clientes/petroperu.png" alt="PetroPeru" />
           </div>
           <div class="carrusel-item">
-            <img src="../img/clientes/prosema.jpg" alt="" />
+            <img src="../img/clientes/prosema.jpg" alt="Prosema" />
           </div>
           <div class="carrusel-item">
-            <img src="../img/clientes/saludprimavera.png" alt="" />
+            <img src="../img/clientes/saludprimavera.png" alt="Salud Primavera" />
           </div>
           <div class="carrusel-item">
-            <img src="../img/clientes/sanantonio.png" alt="" />
+            <img src="../img/clientes/sanantonio.png" alt="SanAntonio" />
           </div>
           <div class="carrusel-item">
-            <img src="../img/clientes/upn.jpeg" alt="" />
+            <img src="../img/clientes/upn.jpeg" alt="UPN" />
           </div>
           <!-- <div class="carrusel-item">
             <img src="../img/clientes/incacel.png" alt="" />
