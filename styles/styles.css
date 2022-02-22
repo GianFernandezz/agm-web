@@ -2,6 +2,24 @@
     margin: 0;
     padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #174e81;
+}
+
 
 body{
     background-color: #f4f5f7;
@@ -16,7 +34,7 @@ h2{
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 h4{
@@ -34,7 +52,7 @@ h5{
     /* color: #000; */
     font-weight: 700;
     border-radius: 10px;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
 }
 
 /* NAVBAR */
@@ -45,7 +63,7 @@ h5{
 }
 
 .colormenu-secundario{
-    background-color: #1877f2;
+    background-color: #174e81;
 }
 
 .servicio:hover{
@@ -69,7 +87,7 @@ h5{
 .texto-logo-navbar{
     margin-top: 30px;
     /* background-color: red; */
-    color: #013a6a;
+    color: #174e81;
     font-weight: 700;
     font-size: 20px;
     font-family: Arial;
@@ -86,6 +104,56 @@ h5{
     font-style: italic;
 }
 
+.logo-movil-padre{
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-logo-movil{
+    padding-top: 20px;
+    padding-left: 8px;
+    font-size: 15px;
+    font-style: italic;
+    color: #174e81;
+    font-weight: 500;
+}
+
+@media(min-width:150px) and (max-width:500px){
+    .item-navbar{
+        font-size: 12px;
+    }
+}
+
+/* Navbar movil */
+
+@media(min-width:1401px) and (max-width:2500px){
+    .navbar-movil{
+        display: none;
+    }
+    .tamaño-carrusel{
+        height: 750px;
+    }
+}
+
+@media(min-width:416px) and (max-width:1400px){
+    .navbar-movil{
+        display: none;
+    }
+}
+
+@media(min-width:100px) and (max-width:415px){
+    .navbar-web{
+        display: none;
+    }
+    .principal-main{
+        margin-top: 78px;
+    }
+    .logo-movil{
+        height: auto;
+        width: 45px;
+        padding: 0;
+    }
+}
 
 /* NAVBAR */
 
@@ -93,6 +161,24 @@ h5{
 
 .tamaño-carrusel{
     height: 525px;
+}
+
+@media(min-width:1401px) and (max-width:2500px){
+    .tamaño-carrusel{
+        height: 800px;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1400px){
+    .tamaño-carrusel{
+        height: 530px;
+    }
+}
+
+@media(min-width:1001px) and (max-width:1199px){
+    .tamaño-carrusel{
+        height: 500px;
+    }
 }
 
 @media(min-width:680px) and (max-width:1000px) {
@@ -104,13 +190,13 @@ h5{
     }
 }
 
-@media(min-width:580px) and (max-width:679px) {
+@media(min-width:541px) and (max-width:679px) {
     .tamaño-carrusel{
         height: 350px;
     }
 }
 
-@media(min-width:400px) and (max-width:479px) {
+@media(min-width:400px) and (max-width:540px) {
     .tamaño-carrusel{
         height: 250px;
     }
@@ -125,11 +211,12 @@ h5{
 /* CARRUSEL FIN */
 
 
+
 /* BANNER */
 
 .banner{
     /* background-color: #ff0000; */
-    background-color: #1877f2;
+    background-color: #174e81;
     color: #FFF;
 }
 .botonprincipal{
@@ -154,11 +241,15 @@ h5{
     height: 340px;
 }
 
-@media(min-width:440px) and (max-width:969px) {
+@media(min-width:240px) and (max-width:969px) {
 
     .regran-texto{
-        margin-top: 35px;
-        margin-bottom: 35px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .regran-imagen{
+        margin-bottom: 30px;
     }
 
 }
@@ -186,6 +277,14 @@ h5{
     height: 200px;
 }
 
+@media(min-width:1200px) and (max-width:2500px) {
+    .cards-imagen{
+        width: auto;
+        height: 220px;
+    }
+
+}
+
 @media(min-width:250px) and (max-width:400px) {
     .cards-imagen{
         width: auto;
@@ -199,7 +298,7 @@ h5{
     font-size: 17px;
     font-weight: 500;
     padding: 0.5em 1.2em;
-    background: #1877f2;
+    background: #174e81;
     border: 2px solid;
     position: relative;
   }
@@ -260,12 +359,22 @@ h5{
     color: #666666;
 }
 
-@media(min-width:260px) and (max-width:640px){
+@media(min-width:641px) and (max-width:980px){
     .titulo-modal{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     .arreglar{
-        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+}
+
+@media(min-width:260px) and (max-width:640px){
+    .titulo-modal{
+        font-size: 1.8rem;
+    }
+    .arreglar{
+        font-size: 1.4rem;
+        margin-top: 20px;
     }
     .texto-modal{
         font-size: 13px;
@@ -334,6 +443,11 @@ h5{
 
 /* SERVICIO 1 */
 
+.navbar-movil-secundario{
+    background-color: #174e81;
+}
+
+
 .imagen-servicio{
     border-radius: 10px;
     width: 700px;
@@ -343,7 +457,7 @@ h5{
 .imagen-servicio-doble{
     border-radius: 10px;
     width: 500px;
-    height: 310px;
+    height: 350px;
 }
 
 .titulo-servicio{
@@ -380,7 +494,7 @@ h5{
 
     .imagen-servicio-doble{
         width: 400px;
-        height: 210px;
+        height: 250px;
     }
 }
 
@@ -392,7 +506,7 @@ h5{
 
     .imagen-servicio-doble{
         width: 400px;
-        height: 210px;
+        height: 250px;
     }
 }
 
@@ -404,7 +518,7 @@ h5{
 
     .imagen-servicio-doble{
         width: 280px;
-        height: 150px;
+        height: 200px;
     }
 }
 
@@ -482,26 +596,11 @@ h5{
 
 }
 
-.servicioThree{
-    margin-bottom: 60px;
-}
-
 .imagenesServicioTres{
     margin-top: 40px;
 }
 
-@media(min-width:570px) and (max-width:1117px) {
 
-    .servicioThree > div{
-        display: block;
-        text-align: center;
-    }
-
-    .imagenServicioReducida{
-        margin-top: 40px;
-    }
-    
-}
 
 /* PIE DE PAGINA */
 
@@ -543,7 +642,7 @@ h5{
     height: 320px;
 }
 
-@media(min-width:360px) and (max-width:640px){
+@media(min-width:160px) and (max-width:640px){
     .nosotros-titulo{
         font-size: 1.2rem;
     }
@@ -557,6 +656,11 @@ h5{
     .imagen-nosotros{
         width: 150px;
         height: 150px;
+    }
+    .nosotros-cuerpo{
+        display: grid;
+        grid-template-columns: 600px;
+        justify-items: center; 
     }
     
 }
